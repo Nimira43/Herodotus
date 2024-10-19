@@ -1,3 +1,9 @@
+---
+import { Image } from "astro:assets"
+import logo from '../images/logo.png'
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,7 +27,7 @@
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="images/logo.png" class="h-14" alt="Tekkies Logo" />
+          <Image src={logo} class="h-14" alt="Tekkies Logo" width={55} height={55} />
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap"
             >Tekkies</span
@@ -127,10 +133,10 @@
       
         <div class="relative inline-block w-full sm:w-auto cursor-pointer rounded-2xl">
           <a href="article.html">
-          <img src="images/image1.png" alt="Article Image" class="w-full h-auto rounded-2xl" />
+          <img src="/images/image1.png" alt="Article Image" class="w-full h-auto rounded-2xl" />
 
           <div
-            class="absolute inset-0 flex flex-col items-center justify-center bg-[#111] text-[#efefef] text-center rounded-2xl"
+            class="absolute inset-0 flex flex-col items-center justify-center bg-[#111] opacity-80 hover:opacity-75 transition duration-300 ease-in-out text-[#efefef] text-center rounded-2xl"
           >
             <div>
               <h2 class="text-2xl font-semibold sm:text-3xl">
@@ -162,7 +168,7 @@
           <div class="bg-[#efefef] rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image2.png"
+                src="/images/image2.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -191,7 +197,7 @@
           <div class="bg-[#efefef] rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image3.png"
+                src="/images/image3.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -200,7 +206,7 @@
               <h2 class="text-2xl font-semibold mb-2">
                 <a href="article.html"> Next Generation Virtual Worlds: VR Development </a>
               </h2>
-              <p class="text-[#333] text-sm mb-4">October 15th 2024</p>
+              <p class="text-[#333] text-sm mb-4">17th October 2024</p>
               <div class="flex flex-wrap gap-2">
                 <span
                 class="px-2 py-1 bg-[#ff4500] text-[#efefef] rounded-full text-xs hover:opacity-90"
@@ -220,7 +226,7 @@
           <div class="bg-[#efefef] rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image4.png"
+                src="/images/image4.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -249,7 +255,7 @@
           <div class="bg-[#efefef] rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image5.png"
+                src="/images/image5.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -278,7 +284,7 @@
           <div class="bg-[#efefef] rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image6.png"
+                src="/images/image6.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -307,7 +313,7 @@
           <div class="bg-[#efefef] rounded-lg overflow-hidden shadow-lg">
             <a href="article.html">
               <img
-                src="images/image7.png"
+                src="/images/image7.png"
                 alt="Article Image"
                 class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
               />
@@ -318,7 +324,7 @@
                   Unleash Creativity With These Cutting-Edge Tablets</a
                 >
               </h2>
-              <p class="text-[#333] text-sm mb-4">January 13, 2024</p>
+              <p class="text-[#333] text-sm mb-4">6th October 2024</p>
               <div class="flex flex-wrap gap-2">
                 <span
                   class="px-2 py-1 bg-[#ff4500]] text-[#efefef] rounded-full text-xs hover:opacity-90"
