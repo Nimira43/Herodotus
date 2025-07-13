@@ -28,7 +28,7 @@ import './src/styles/global.css'
 				aria-controls="navbar-default"
 				aria-expanded="false"
 			>
-				<!-- <span class="sr-only">Open Main Menu</span> -->
+				<span class="sr-only">Open Main Menu</span>
 				<i class="fa-solid fa-bars"></i>
 			</button>
 			<div class="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -71,6 +71,25 @@ import './src/styles/global.css'
 		<div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
 			<div>
 				<h1 class="text-5xl font-medium mt-4 mb-8 leading-tight xl:text-6xl text-blue-500">Resources & Docs for Coders</h1>
+				<form 
+					id="search-form"
+					class="flex items-center"
+				>
+					<label 
+						for="search-input"
+						class="sr-only"
+					>
+						Search
+					</label>
+					<input 
+						type="text"
+						id="query"
+						name="query"
+						class="bg-blue-50 border border-gray-900 text-gray-900 text-sm rounded-lg block w-full p-2.5 outline-none"
+						placeholder="Search resources..."
+						required
+					>
+				</form>
 			</div>
 		</div>
 	</section>
