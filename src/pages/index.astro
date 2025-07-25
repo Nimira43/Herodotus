@@ -24,7 +24,7 @@ import './src/styles/global.css'
 			<button
 				data-collapse-toggle="navbar-default"
 				type="button"
-				class="inline-flex items-center p-2 w-10 h-10 justify-center text-lg bg-white text-blue-500 hover:bg-blue-200 rounded-lg md:hidden cursor-pointer"
+				class="inline-flex items-center p-2 w-10 h-10 justify-center text-lg bg-white text-blue-500 hover:bg-blue-200 rounded-md md:hidden cursor-pointer"
 				aria-controls="navbar-default"
 				aria-expanded="false"
 			>
@@ -86,12 +86,18 @@ import './src/styles/global.css'
 							type="text"
 							id="query"
 							name="query"
-							class="bg-blue-50 border border-gray-900 text-gray-900 text-sm rounded-lg block w-full p-2.5 outline-none"
+							class="bg-blue-50 border border-gray-900 text-gray-900 text-sm rounded-md block w-full p-2.5 outline-none"
 							placeholder="Search resources..."
 							required
 						>
 					</div>
-					
+					<button
+						type="submit"
+						class="p-2.5 ms-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-700 outline-none"
+					>
+						<i class="fa-solid fa-magnifying-glass"></i>
+						<span class="sr-only">Search</span>
+					</button>	
 				</form>
 			</div>
 		</div>
