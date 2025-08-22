@@ -1,9 +1,16 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro'
+import { Image } from 'astro:assets'
 ---
 <MainLayout>
   <h1 text-4xl font-medium mb-5>About Herodotus</h1>
   <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-    
+    <div class="w-full md:w-1/2 mb-8 md:mb-0">
+      <img 
+        src="" 
+        alt="" 
+        class="w-full h-auto rounded-md shadow-lg"
+      >
+    </div>
   </div>
 </MainLayout>
