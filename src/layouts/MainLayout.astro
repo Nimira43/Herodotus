@@ -2,7 +2,7 @@
 import './src/styles/global.css'
 import { Image } from 'astro:assets'
 import logo from '../images/logo.png'
-import { SITE_TITLE,SITE_DESCRIPTION } from 'src/constants' 
+import { SITE_TITLE, SITE_DESCRIPTION } from 'src/constants' 
 
 const { title = 'Resources & Docs for Coders'} = Astro.props
 ---
@@ -17,7 +17,7 @@ const { title = 'Resources & Docs for Coders'} = Astro.props
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.js" integrity="sha512-BJ/5sR2hFxQTKin/55JQCcMTObShDBAmVjL/3NR/MVcrhyOazJjAgvROem03+HYyGw16SVdSfoWCFGr9syxAKA=="
 	crossorigin="anonymous"
 	referrerpolicy="no-referrer"></script>
-  <title>{ title }</title>
+  <title>{SITE_TITLE} | { title }</title>
 </head>
 <body>
   <nav class="bg-blue-500 text-white">
