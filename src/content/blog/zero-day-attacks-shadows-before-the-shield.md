@@ -2,7 +2,7 @@
 title: 'Zero-Day Attacks: Shadows Before the Shield'
 pubDate: 2025-10-06
 author: 'Christopher McKinlay'
-image: 'image-.png'
+image: 'image-7.png'
 tags: ['cyber security', 'news']
 slug: zero-day-attacks-shadows-before-the-shield
 ---

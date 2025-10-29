@@ -2,7 +2,7 @@
 title: 'Java Runtime: The Magic Beneath'
 pubDate: 2025-10-15
 author: 'Ravi Deshmukh'
-image: 'image-4.png'
+image: 'image-3.png'
 tags: ['Java', 'Feature']
 slug: java-runtime-magic-beneath
 ---

@@ -2,7 +2,7 @@
 title: 'C++ Unchained: Speed & Control'
 pubDate: 2025-10-09
 author: 'Elena Kovács'
-image: 'image-7.png'
+image: 'image-1.png'
 tags: ['C++', 'Feature']
 slug: cpp-unchained-speed-control
 ---
