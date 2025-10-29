@@ -1,16 +1,10 @@
----
-title: 'Unreal Engine: Precision & Particle Power'
-pubDate: 2025-10-09
-author: 'Jules Okafor'
-image: 'image-2.png'
-tags: ['Unreal', 'Game Dev']
-slug: unreal-engine-precision-particle-power
----
+--- 
+title: 'Unreal Engine: Crafting Worlds with Precision and Particle Fire' 
+pubDate: 2025-10-09 
+author: '' 
+image: 'image-2.png' 
+tags: ['Unreal', 'Game Dev'] 
+slug: 
+--- 
 
-Unreal Engine continues to redefine what’s possible in real-time rendering. Its precision tools and particle systems allow developers to craft immersive worlds with cinematic flair.
-
-From dynamic lighting to Niagara-powered effects, Unreal offers granular control over every visual element. Developers can simulate fire, fog, and fury — all with performance in mind.
-
-Blueprints and C++ coexist in harmony, giving teams the flexibility to prototype fast and scale deep. Whether building AAA titles or indie gems, Unreal’s architecture supports ambition.
-
-This engine isn’t just about graphics — it’s about storytelling through simulation. With each particle burst and shader tweak, a new world takes shape.
+150 words article - broken up into 3 to 4 paragraphs. Please shorten title to something a bit briefer Please could you fill in author and slug please.
