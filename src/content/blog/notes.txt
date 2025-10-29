@@ -1,0 +1,12 @@
+---
+title: 'How Java Works: Behind the Scenes of Runtime Magic'
+pubDate: 2025-10-15
+author: ''
+image: 'image-4.png'
+tags: ['Java', 'Feature']
+slug: 
+---
+
+150 words article  - broken up into 3 to 4 paragraphs.
+Please shorten title to something a bit briefer
+Please could you fill in author and slug please.
