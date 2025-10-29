@@ -28,6 +28,14 @@ const allBlogArticles: CollectionEntry<'blog'>[] = await getCollection('blog')
             <p class="grey-800 text-sm mb-4">{article.data.pubDate}</p>
             <div class="flex flex-wrap gap-2">
 
+{article.data.tags.map((
+  tag: string,
+  index: number
+) => (
+  
+))}
+
+
               <span class="px-2 py-1 bg-blue-500 text-white rounded-sm text-xs hover:opacity-90">
                 <a href="#">Topic</a>
               </span>
