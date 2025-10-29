@@ -1,7 +1,5 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro'
-import { Image } from 'astro:assets'
-import place from '../../images/team-photo.jpg'
 import { getCollection } from 'astro:content'
 import type { CollectionEntry } from 'astro:content'
 
@@ -38,7 +36,7 @@ const allBlogArticles: CollectionEntry<'blog'>[] = await getCollection('blog')
                     : 'px-2 py-1 bg-black text-white rounded-sm text-xs uppercase hover:opacity-90'
                   }
                 >
-                  <a href='#'>{tag}</a>
+                  <a href={'/articles/tag/' + tag}>{tag}</a>
                 </span>  
               ))}
             </div>
