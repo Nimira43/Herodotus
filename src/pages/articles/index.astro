@@ -2,6 +2,8 @@
 import MainLayout from '../../layouts/MainLayout.astro'
 import { Image } from 'astro:assets'
 import place from '../../images/team-photo.jpg'
+import { getCollection } from 'astro:content'
+import type { CollectionEntry } from 'astro:content'
 ---
 <MainLayout title="Leading Articles">
   <h1 class="text-2xl pb-3">Leading Articles</h1>
