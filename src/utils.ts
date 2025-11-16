@@ -3,3 +3,7 @@ function formatDate(date: Date): string {
 
   return new Date(date).toLocaleDateString(undefined, options)
 }
+
+export {
+  formatDate
+}
