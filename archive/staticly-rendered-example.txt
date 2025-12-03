@@ -4,7 +4,7 @@ src/pages/articles/[...slug.astro]
 
 
 ---
-import type { GetStaticPaths } from "astro";
+import type { GetStaticPaths } from 'astro'
 import MainLayout from '@layouts/MainLayout.astro'
 import { getCollection } from 'astro:content'
 import type { CollectionEntry } from 'astro:content'
