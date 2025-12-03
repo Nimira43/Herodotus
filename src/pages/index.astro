@@ -4,6 +4,7 @@ import MainLayout from '../layouts/MainLayout.astro'
 import { HOMEPAGE_ARTICLE_LIMIT } from 'src/constants'
 import { getCollection } from 'astro:content'
 import type { CollectionEntry } from 'astro:content'
+import MostRecentArticle from '@components/MostRecentArticle.astro'
 import ArticleCard from '@components/ArticleCard.astro'
 
 const allBlogArticles: CollectionEntry<'blog'>[] = (await getCollection('blog'))
