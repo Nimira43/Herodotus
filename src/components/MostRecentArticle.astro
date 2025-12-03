@@ -2,6 +2,8 @@
 import { formatDate } from 'src/utils'
 import type { CollectionEntry } from 'astro:content'
 
+const { article } = Astro.props
+
 interface Props {
   article: CollectionEntry<'blog'>
 }
