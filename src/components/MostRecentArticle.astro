@@ -2,6 +2,9 @@
 import { formatDate } from 'src/utils'
 import type { CollectionEntry } from 'astro:content'
 
+interface Props {
+  article: CollectionEntry<'blog'>
+}
 ---
 
 <div class='relative inline-block w-full sm:w-auto cursor-pointer rounded-2xl'>
