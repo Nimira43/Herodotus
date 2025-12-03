@@ -6,6 +6,10 @@ import type { CollectionEntry } from 'astro:content'
 
 export async function getStaticPaths() {
   const allBlogArticles: CollectionEntry<'blog'> = await getCollection('blog')
+
+  return allBlogArticles.map(entry => ({
+    
+  }))
 }
 
 ---
