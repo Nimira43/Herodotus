@@ -1,20 +1,20 @@
 ---
-import MainLayout from '@layouts/MainLayout.astro'
-import { getEntry } from 'astro:content'
-const { article } = Astro.props
-const { slug } = Astro.params
+import MainLayout from '@layouts/MainLayout.astro' 
+import { getEntry } from 'astro:content' 
+const { article } = Astro.props 
+const { slug } = Astro.params 
 
 if (slug === undefined) {
-  throw new Error('Slug is required.');
+  throw new Error('Slug is required.') 
 }
 
-const entry = await getEntry('blog', slug);
+const entry = await getEntry('blog', slug) 
 
-if (!entry === undefined) {
-  return Astro.redirect('/404');
+if (entry === undefined) {
+  return Astro.redirect('/404') 
 }
 
-const { Content } = await entry.render();
+const { Content } = await entry.render() 
 ---
 
 <MainLayout>
@@ -39,12 +39,7 @@ const { Content } = await entry.render();
         Topic
       </span>
     </div>
-    <img 
-      src=''
-      alt='Article Image' 
-      class='w-full h-auto rouned-md mb-6' 
-    />
+    <img src='' alt='Article Image' class='w-full h-auto rouned-md mb-6' />
     <Content />
   </article>
-  
 </MainLayout>
