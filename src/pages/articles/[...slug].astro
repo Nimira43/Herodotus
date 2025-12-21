@@ -1,6 +1,7 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
 import { getEntry } from "astro:content";
+import { formatDate } from "src/utils";
 const { article } = Astro.props;
 const { slug } = Astro.params;
 
@@ -25,8 +26,12 @@ const { Content } = await entry.render();
     Back to Articles
   </a>
   <article>
-    <h1 class='text-4xl font-medium mb-2'>{entry.data.title}</h1>
-    <h3 class='text-lg mb-2'>{entry.data.author}</h3>
+    <h1 class='text-4xl font-medium mb-2'>
+      {entry.data.title}
+    </h1>
+    <h3 class='text-lg mb-2'>
+      {entry.data.author} on {formatDate(entry.data.pubDate)}
+    </h3>
     <div class='flex flex-wrap gap-2 mb-6'>
       <span
         class='px-2 py-1 bg-blue-500 text-white rounded-sm text-xs uppercase hover:opacity-85 hover-transition'
