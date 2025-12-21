@@ -44,7 +44,11 @@ const { Content } = await entry.render();
         Topic
       </span>
     </div>
-    <img src='' alt='Article Image' class='w-full h-auto rouned-md mb-6' />
+    <img 
+      src={'/images/' + entry.data.image} 
+      alt='Article Image' 
+      class='w-full h-auto rouned-md mb-6' 
+    />
     <Content />
   </article>
 </MainLayout>
