@@ -1,21 +1,21 @@
 ---
-import MainLayout from "@layouts/MainLayout.astro";
-import { getEntry } from "astro:content";
-import { formatDate } from "src/utils";
-const { article } = Astro.props;
-const { slug } = Astro.params;
+import MainLayout from '@layouts/MainLayout.astro' 
+import { getEntry } from 'astro:content' 
+import { formatDate } from 'src/utils' 
+const { article } = Astro.props 
+const { slug } = Astro.params 
 
 if (slug === undefined) {
-  throw new Error("Slug is required.");
+  throw new Error('Slug is required.') 
 }
 
-const entry = await getEntry("blog", slug);
+const entry = await getEntry('blog', slug) 
 
 if (entry === undefined) {
-  return Astro.redirect("/404");
+  return Astro.redirect('/404') 
 }
 
-const { Content } = await entry.render();
+const { Content } = await entry.render() 
 ---
 
 <MainLayout>
@@ -38,17 +38,17 @@ const { Content } = await entry.render();
           <span
             class={
               index % 2 === 0
-                ? "px-2 py-1 bg-blue-500 text-white rounded-sm text-xs uppercase hover:opacity-85 hover-transition"
-                : "px-2 py-1 bg-black text-white rounded-sm text-xs uppercase hover:opacity-85 hover-transition"
+                ? 'px-2 py-1 bg-blue-500 text-white rounded-sm text-xs uppercase hover:opacity-85 hover-transition'
+                : 'px-2 py-1 bg-black text-white rounded-sm text-xs uppercase hover:opacity-85 hover-transition'
             }
           >
-            <a href={"/articles/tag/" + tag}>{tag}</a>
+            <a href={'/articles/tag/' + tag}>{tag}</a>
           </span>
         ))
       }
     </div>
     <img
-      src={"/images/" + entry.data.image}
+      src={'/images/' + entry.data.image}
       alt='Article Image'
       class='w-full h-auto rouned-md mb-6'
     />
@@ -58,6 +58,6 @@ const { Content } = await entry.render();
 
 <style is:global>
   p {
-    margin: 20px 0;
+    margin: 20px 0 
   }
 </style>
