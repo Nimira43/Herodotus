@@ -9,7 +9,10 @@ if (slug === undefined) {
 }
 
 const entry = await getEntry('blog', slug)
-console.log(entry)
+
+if (!entry === undefined) {
+  return Astro.redirect('/404')
+}
 
 ---
 
