@@ -1,18 +1,18 @@
 ---
-import { formatDate } from "src/utils";
-import type { CollectionEntry } from "astro:content";
+import { formatDate } from 'src/utils';
+import type { CollectionEntry } from 'astro:content';
 
 const { article } = Astro.props;
 
 interface Props {
-  article: CollectionEntry<"blog">;
+  article: CollectionEntry<'blog'>;
 }
 ---
 
 <div class='relative inline-block w-full sm:w-auto cursor-pointer rounded-2xl'>
-  <a href={"/articles/" + article.slug}>
+  <a href={'/articles/' + article.slug}>
     <img
-      src={"/images/" + article.data.image}
+      src={'/images/' + article.data.image}
       alt='Article Image'
       class='w-full h-auto rounded-2xl'
     />

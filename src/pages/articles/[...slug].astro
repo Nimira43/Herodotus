@@ -1,17 +1,17 @@
 ---
-import MainLayout from "@layouts/MainLayout.astro";
-import { getEntry } from "astro:content";
-
-const { slug } = Astro.params;
+import MainLayout from '@layouts/MainLayout.astro'
+import { getEntry } from 'astro:content'
+const { article } = Astro.props
+const { slug } = Astro.params
 
 if (slug === undefined) {
-  throw new Error("Slug is required.");
+  throw new Error('Slug is required.');
 }
 
-const entry = await getEntry("blog", slug);
+const entry = await getEntry('blog', slug);
 
 if (!entry === undefined) {
-  return Astro.redirect("/404");
+  return Astro.redirect('/404');
 }
 
 const { Content } = await entry.render();
@@ -20,11 +20,32 @@ const { Content } = await entry.render();
 <MainLayout>
   <a
     href='#'
-    class='inline-block p-2 m-6 font-medium uppercase text-white bg-blue-500 rounded-md hover:opacity-85 cursor-pointer hover-transition'
+    class='inline-block p-2 m-6 font-medium uppercase text-gray-800 rounded-md hover:text-blue-500 cursor-pointer hover-transition'
   >
     Back to Articles
   </a>
-  <h1 class="text-4xl font-medium mb-2">Placeholder Heading</h1>
-  <h3 class="text-lg mb-2">Author of Article on Date</h3>
-  
+  <h1 class='text-4xl font-medium mb-2'>Placeholder Heading</h1>
+  <h3 class='text-lg mb-2'>Author of Article on Date</h3>
+  <div class='flex flex-wrap gap-2 mb-6'>
+    <span
+      class='px-2 py-1 bg-blue-500 text-white rounded-sm text-xs uppercase hover:opacity-85 hover-transition'
+    >
+      Topic
+    </span>
+    <span
+      class='px-2 py-1 bg-black text-white rounded-sm text-xs uppercase hover:opacity-85 hover-transition'
+    >
+      Topic
+    </span>
+  </div>
+  <img 
+    src=''
+    alt='Article Image' 
+    class='w-full h-auto rouned-md mb-6' 
+  />
+  <p class='my'>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio impedit est
+    fuga tempore placeat quae earum voluptatem nemo. Et aliquid cumque ipsam
+    maiores.
+  </p>
 </MainLayout>
