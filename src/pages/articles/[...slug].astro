@@ -1,25 +1,26 @@
 ---
-import MainLayout from '@layouts/MainLayout.astro'
-import { getEntry } from 'astro:content'
+import MainLayout from "@layouts/MainLayout.astro";
+import { getEntry } from "astro:content";
 
-const { slug } = Astro.params
+const { slug } = Astro.params;
 
 if (slug === undefined) {
-  throw new Error('Slug is required.')
+  throw new Error("Slug is required.");
 }
 
-const entry = await getEntry('blog', slug)
+const entry = await getEntry("blog", slug);
 
 if (!entry === undefined) {
-  return Astro.redirect('/404')
+  return Astro.redirect("/404");
 }
 
-const { Content } = await entry.render()
-
+const { Content } = await entry.render();
 ---
 
 <MainLayout>
-  <h1>Article</h1>
+  <a
+    href='#'
+    class='inline-block p-2 m-6 font-medium uppercase text-white bg-blue-500 rounded-md hover:opacity-90  cursor-pointer'
+    >Back to Articles</a
+  >
 </MainLayout>
-
-
