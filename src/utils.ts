@@ -5,5 +5,5 @@ function formatDate(date: Date): string {
 }
 
 export {
-  formatDate
+  formatDate,
 }

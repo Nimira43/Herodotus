@@ -3,7 +3,7 @@ title: 'Full Stack Clarity with Next.js & MongoDB'
 pubDate: 2025-09-30
 author: 'Amina Farouk'
 image: 'image-6.png'
-tags: ['next js', 'mongo db']
+tags: ['Next js', 'Mongo DB']
 slug: full-stack-clarity-nextjs-mongodb
 ---
 

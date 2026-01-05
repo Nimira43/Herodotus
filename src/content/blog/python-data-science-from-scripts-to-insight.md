@@ -3,7 +3,7 @@ title: 'Python & Data Science: From Scripts to Insight'
 pubDate: 2025-12-06
 author: 'Lucia Santamaria'
 image: 'image-5.png'
-tags: ['python', 'data science']
+tags: ['Python', 'Data Science']
 slug: python-data-science-from-scripts-to-insight
 ---
 

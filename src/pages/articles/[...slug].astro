@@ -1,8 +1,9 @@
 ---
 import MainLayout from '@layouts/MainLayout.astro' 
+import Tags from '@components/Tags.astro' 
 import { getEntry } from 'astro:content' 
 import { formatDate } from 'src/utils' 
-const { article } = Astro.props 
+
 const { slug } = Astro.params 
 
 if (slug === undefined) {
@@ -21,7 +22,7 @@ const { Content } = await entry.render()
 <MainLayout>
   <a
     href='/articles'
-    class='inline-block p-2 m-6 font-medium uppercase text-gray-800 rounded-md hover:text-blue-500 cursor-pointer hover-transition'
+    class='inline-block py-2 my-6 font-medium uppercase text-gray-800 rounded-md hover:text-blue-500 cursor-pointer hover-transition'
   >
     Back to Articles
   </a>
@@ -32,25 +33,11 @@ const { Content } = await entry.render()
     <h3 class='text-lg mb-2'>
       {entry.data.author} on {formatDate(entry.data.pubDate)}
     </h3>
-    <div class='flex flex-wrap gap-2 mb-6'>
-      {
-        entry.data.tags.map((tag: string, index: number) => (
-          <span
-            class={
-              index % 2 === 0
-                ? 'px-2 py-1 bg-blue-500 text-white rounded-sm text-xs uppercase hover:opacity-85 hover-transition'
-                : 'px-2 py-1 bg-black text-white rounded-sm text-xs uppercase hover:opacity-85 hover-transition'
-            }
-          >
-            <a href={'/articles/tag/' + tag}>{tag}</a>
-          </span>
-        ))
-      }
-    </div>
+    <Tags tags={entry.data.tags} />
     <img
       src={'/images/' + entry.data.image}
       alt='Article Image'
-      class='w-full h-auto rouned-md mb-6'
+      class='w-full h-auto rouned-md my-6'
     />
     <Content />
   </article>

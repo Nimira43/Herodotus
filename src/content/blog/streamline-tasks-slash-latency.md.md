@@ -3,7 +3,7 @@ title: 'Streamline Tasks, Slash Latency'
 pubDate: 2025-09-20
 author: 'Esbern Mikkelsen'
 image: 'image-4.png'
-tags: ['tutorials', 'linux']
+tags: ['Tutorials', 'Linux']
 slug: streamline-tasks-slash-latency
 ---
 
